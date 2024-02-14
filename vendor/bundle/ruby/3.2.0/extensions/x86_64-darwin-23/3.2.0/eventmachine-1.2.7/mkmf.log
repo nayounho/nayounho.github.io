@@ -168,7 +168,7 @@ DYLD_FALLBACK_LIBRARY_PATH=.:/usr/local/Cellar/ruby@3.2/3.2.3/lib "clang -o conf
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: Undefined symbols:
   _rb_thread_blocking_region, referenced from:
-      _t in conftest-33efff.o
+      _t in conftest-e9700a.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */
@@ -334,7 +334,7 @@ DYLD_FALLBACK_LIBRARY_PATH=.:/usr/local/Cellar/ruby@3.2/3.2.3/lib "clang -o conf
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: Undefined symbols:
   _rb_enable_interrupt, referenced from:
-      _t in conftest-537c72.o
+      _t in conftest-457338.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */
@@ -517,7 +517,7 @@ DYLD_FALLBACK_LIBRARY_PATH=.:/usr/local/Cellar/ruby@3.2/3.2.3/lib "clang -o conf
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: Undefined symbols:
   _pipe2, referenced from:
-      _t in conftest-7aeda2.o
+      _t in conftest-6ef3fb.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */
@@ -573,7 +573,7 @@ DYLD_FALLBACK_LIBRARY_PATH=.:/usr/local/Cellar/ruby@3.2/3.2.3/lib "clang -o conf
 ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: Undefined symbols:
   _accept4, referenced from:
-      _t in conftest-c0c202.o
+      _t in conftest-f29d58.o
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
 /* begin */

@@ -1,0 +1,19 @@
+current directory: /Users/atto_mac/Documents/study/nayounho.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+/usr/local/opt/ruby@3.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/atto_mac/Documents/study/nayounho.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240214-83154-o9353y sitelibdir\=./.gem.20240214-83154-o9353y clean
+
+current directory: /Users/atto_mac/Documents/study/nayounho.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240214-83154-o9353y sitelibdir\=./.gem.20240214-83154-o9353y
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/atto_mac/Documents/study/nayounho.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240214-83154-o9353y sitelibdir\=./.gem.20240214-83154-o9353y install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240214-83154-o9353y/racc
+
+current directory: /Users/atto_mac/Documents/study/nayounho.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240214-83154-o9353y sitelibdir\=./.gem.20240214-83154-o9353y clean
