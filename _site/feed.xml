@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
   <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
-  <updated>2024-02-22T19:45:47+09:00</updated>
+  <updated>2024-02-22T20:10:59+09:00</updated>
   <author>
     <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,70 @@
 
   
   <entry>
+    <title>[React-query] React-query 사용예제</title>
+    <link href="http://localhost:4000/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/" rel="alternate" type="text/html" title="[React-query] React-query 사용예제" />
+    <published>2024-02-22T20:00:00+09:00</published>
+  
+    <updated>2024-02-22T20:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/</id>
+    <content src="http://localhost:4000/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/" />
+    <author>
+      <name>nayounho</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+    <category term="Library" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      React-query 사용 예제
+
+기존 코드
+
+
+const Coins = () =&amp;gt; {
+
+const [coins, setCoins] = useState&amp;lt;ICoin[]&amp;gt;([]); // 통신으로 받아온 coins data 상태관리
+
+const [loading, setLoading] = useState(true); // 통신 과정 상태관리
+
+
+
+useEffect(() =&amp;gt; { // 화면 mount 시 해당 함수 실행
+
+(async () =&amp;gt; {
+
+const res = await fetch("httpspi.coinpaprika.com/v1/coins"); // data 요청
+
+const data = await res.json();
+
+
+
+setCoins(data.slice(0, 100...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>[Git] Git 명령어 정리</title>
     <link href="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[Git] Git 명령어 정리" />
     <published>2024-02-22T17:30:00+09:00</published>
   
-    <updated>2024-02-22T17:30:00+09:00</updated>
+    <updated>2024-02-22T19:52:12+09:00</updated>
   
     <id>http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</id>
     <content src="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" />

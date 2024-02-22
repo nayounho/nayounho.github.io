@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "[React-query] React-query 사용예제",
+    "url": "/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/",
+    "categories": "Development, Library",
+    "tags": "React-query, React",
+    "date": "2024-02-22 20:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "React-query 사용 예제기존 코드const Coins = () =&gt; {const [coins, setCoins] = useState&lt;ICoin[]&gt;([]); // 통신으로 받아온 coins data 상태관리const [loading, setLoading] = useState(true); // 통신 과정 상태관리useEffect(...",
+    "content": "React-query 사용 예제기존 코드const Coins = () =&gt; {const [coins, setCoins] = useState&lt;ICoin[]&gt;([]); // 통신으로 받아온 coins data 상태관리const [loading, setLoading] = useState(true); // 통신 과정 상태관리useEffect(() =&gt; { // 화면 mount 시 해당 함수 실행(async () =&gt; {const res = await fetch(\"httpspi.coinpaprika.com/v1/coins\"); // data 요청const data = await res.json();setCoins(data.slice(0, 100)); // api 요청으로 받아온 data 상태 업데이트setLoading(false); // 상태 업데이트 후 통신 과정 업데이트})();}, []);&lt;Container&gt;&lt;Header&gt;  &lt;Title&gt;코인&lt;/Title&gt;&lt;/Header&gt;// loading의 boolean 값을 보고 화면 rander 결정  {loading ? (  &lt;Loader&gt;loading...&lt;/Loader&gt;  ) : (    &lt;CoinList&gt;    // 받아온 data를 뿌려주는 과정      {data?.slice(0, 100).map((coin) =&gt; (        &lt;Coin key={coin.id}&gt;          &lt;Link to={`/${coin.id}`} state={{ name: coin.name }}&gt;              &lt;Img              src={`https://cryptocurrencyliveprices.com/img/${coin.id}.png`} alt=\"\"              /&gt;              {coin.name} &amp;rarr;            &lt;/Link&gt;          &lt;/Coin&gt;        ))      }    &lt;/CoinList&gt;  )}&lt;/Container&gt;  );};React Query 코드// src/api.tsconst BASE_URL = \"https://api.coinpaprika.com/v1\";export const fetchCoins = () =&gt; {  return fetch(`${BASE_URL}/coins`).then((res) =&gt; res.json());};// src/routes/Conins.tsxconst Coins = () =&gt; {const { isLoading, data } = useQuery&lt;ICoin[]&gt;('allCoins', fetchCoins);// isLoading: boolean값으로 반환// data: api 통신으로 받아온 data를 반환// allCoins: 고유한 값 지정// fetchCoins: api라는 파일을 따로 만든 후 그곳에서 해당 api 통신을 진행 한 함수를 등록&lt;Container&gt;  &lt;Header&gt;    &lt;Title&gt;코인&lt;/Title&gt;  &lt;/Header&gt;  {isLoading ? ( // isLoading의 boolean 값을 보고 화면 rander 결정    &lt;Loader&gt;loading...&lt;/Loader&gt;    ) : (    &lt;CoinList&gt;      // 받아온 data를 뿌려주는 과정      {data?.slice(0, 100).map((coin) =&gt; (        &lt;Coin key={coin.id}&gt;          &lt;Link to={`/${coin.id}`} state={{ name: coin.name }}&gt;            &lt;Img            src={`https://cryptocurrencyliveprices.com/img/${coin.id}.png`} alt=\"\"            /&gt;            {coin.name} &amp;rarr;          &lt;/Link&gt;        &lt;/Coin&gt;        ))      }    &lt;/CoinList&gt;    )}&lt;/Container&gt;  );};api 통신을 2번 해야하는 상황// src/api.tsconst BASE_URL = \"https://api.coinpaprika.com/v1\";export const fetchCoinInfo = (coinId: string) =&gt; {return fetch(`${BASE_URL}/coins/${coinId}`).then((res) =&gt; res.json());};export const fetchCoinTickers = (coinId: string) =&gt; {return fetch(`${BASE_URL}/tichers/${coinId}`).then((res) =&gt; res.json());};// src/routes/coin.tsxconst Coin = () =&gt; {  const { isLoading: infoLoading, data: infoData } = useQuery&lt;InfoData&gt;(      [\"info\", coinId],      () =&gt; fetchCoinInfo(coinId)    );  const { isLoading: tickersLoading, data: tickersData } = useQuery&lt;PriceData&gt;(      [\"tickers\", coinId],      () =&gt; fetchCoinTickers(coinId)    );// isLoading, data의 이름이 중복되기 때문에 각각의 고유한 이름으로 설정// [\"info\", coinId] -&gt; 고유한 값 설정 부분에서도 coinId가 중복되기 때문에 고유한 값을 같이 설정// 함수 등록 과정에서도 해당 함수에 coinId라는 인수가 필요하여 함수 자체를 설정const loading = infoLoading || tickersLoading; // infoLoading, tickersLoading이둘 다 true가 나올때만 실행사용 후기  사용성: 사용성 측면에서 굉장히 편한 사용 방법과 코드의 양을 줄여줄 수 있었다. 상태관리가 따로 필요하지 않고isLoading이라는 boolean값을 반환하기 때문에 통신에 따라 화면 설정 과정에서도 편리했다  성능: 성능 또한 받아온 data를 cashing하는 기능이 있기 때문에 재렌더링 시 통신이 일어나지 않아성능 상으로도 뛰어나다고 생각한다.  api 통신에서 React Query를 적극 활용할 생각이다."
+  },
+  
+  {
     "title": "[Git] Git 명령어 정리",
     "url": "/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/",
     "categories": "Development, Git",
