@@ -3,20 +3,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-02-14T17:31:38+09:00</updated>
+  <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
+  <updated>2024-02-22T16:22:29+09:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
+  <link rel="alternate" type="text/html" hreflang="ko-KR"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 your_full_name </rights>
+  <rights> © 2024 nayounho </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>test</title>
+    <link href="http://localhost:4000/posts/test/" rel="alternate" type="text/html" title="test" />
+    <published>2024-02-22T14:30:00+09:00</published>
+  
+    <updated>2024-02-22T14:30:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/test/</id>
+    <content src="http://localhost:4000/posts/test/" />
+    <author>
+      <name>nayounho</name>
+    </author>
+
+  
+    
+    <category term="Test" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This page is Test.
+
+Thank you!!
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
