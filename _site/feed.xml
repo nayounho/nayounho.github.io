@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
   <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
-  <updated>2024-02-22T16:22:29+09:00</updated>
+  <updated>2024-02-22T19:00:57+09:00</updated>
   <author>
     <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
@@ -20,21 +20,23 @@
 
   
   <entry>
-    <title>test</title>
-    <link href="http://localhost:4000/posts/test/" rel="alternate" type="text/html" title="test" />
-    <published>2024-02-22T14:30:00+09:00</published>
+    <title>[Git] Git 명령어 정리</title>
+    <link href="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[Git] Git 명령어 정리" />
+    <published>2024-02-22T17:30:00+09:00</published>
   
-    <updated>2024-02-22T14:30:00+09:00</updated>
+    <updated>2024-02-22T17:30:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/test/</id>
-    <content src="http://localhost:4000/posts/test/" />
+    <id>http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</id>
+    <content src="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" />
     <author>
       <name>nayounho</name>
     </author>
 
   
     
-    <category term="Test" />
+    <category term="Development" />
+    
+    <category term="Git" />
     
   
 
@@ -46,10 +48,16 @@
 
 
 
-      This page is Test.
+      git merge 3가지 방법
 
-Thank you!!
 
+  3-way merge
+브랜치 각각(ex: main branch와 dev branch)에 신규 commit이 1회 이상 있는 경우 merge를 하게 되면 두 branch 코드가 합쳐져서 main branch에 새로운 commit이 생성되는 것.
+  fast-forword
+main branch에는 새로운 commit이 없고 dev branch(만든 branch)에만 새로운 commit이 있는 경우 dev branch를 main branch라고 선언하게 된다. 즉, 분기가 없어지고 main에서 새로운commit이 생성된 것과 같은 현상이 발생.
+  
+    rebase &amp;amp; merge
+rebase를 이용해서 신규 branch의 시작점을 main branch의 최근 ...
     </summary>
   
 

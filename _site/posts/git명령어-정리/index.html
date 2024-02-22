@@ -30,23 +30,26 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Test" />
+<meta property="og:title" content="[Git] Git 명령어 정리" />
+<meta name="author" content="nayounho" />
 <meta property="og:locale" content="ko_KR" />
-<meta name="description" content="Frontend developer, JavaScript, TypeScropt, Flutter" />
-<meta property="og:description" content="Frontend developer, JavaScript, TypeScropt, Flutter" />
-<link rel="canonical" href="http://localhost:4000/categories/test/" />
-<meta property="og:url" content="http://localhost:4000/categories/test/" />
+<meta name="description" content="git merge 3가지 방법" />
+<meta property="og:description" content="git merge 3가지 방법" />
+<link rel="canonical" href="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" />
+<meta property="og:url" content="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" />
 <meta property="og:site_name" content="Youn’s Tech Blog" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-02-22T17:30:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Test" />
+<meta property="twitter:title" content="[Git] Git 명령어 정리" />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@nayounho" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Frontend developer, JavaScript, TypeScropt, Flutter","headline":"Test","url":"http://localhost:4000/categories/test/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"nayounho"},"dateModified":"2024-02-22T17:30:00+09:00","datePublished":"2024-02-22T17:30:00+09:00","description":"git merge 3가지 방법","headline":"[Git] Git 명령어 정리","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/"},"url":"http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Test | Youn's Tech Blog
+  <title>[Git] Git 명령어 정리 | Youn's Tech Blog
   </title>
 
   <!--
@@ -103,9 +106,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.25.0/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -452,14 +462,10 @@
           
         
           
-            <span>
-              <a href="/categories/">카테고리</a>
-            </span>
-          
         
           
             
-              <span>Test</span>
+              <span>[Git] Git 명령어 정리</span>
             
 
           
@@ -473,7 +479,7 @@
     </button>
 
     <div id="topbar-title">
-      카테고리
+      포스트
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -499,28 +505,146 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
-    
+  <header>
+    <h1 data-toc-skip>[Git] Git 명령어 정리</h1>
 
-
-
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    Test
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/test/">test</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        게시
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -531,22 +655,339 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1708579800"
+  data-ts="1708590600"
   data-df="YYYY/MM/DD"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
   2024/02/22
 </time>
 
-      </li>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                
+                
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="1166 단어"
+>
+  <em>6 분</em>읽는 시간</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="git-merge-3가지-방법"><span class="me-2">git merge 3가지 방법</span><a href="#git-merge-3가지-방법" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li>3-way merge
+브랜치 각각(ex: main branch와 dev branch)에 신규 commit이 1회 이상 있는 경우 merge를 하게 되면 두 branch 코드가 합쳐져서 main branch에 새로운 commit이 생성되는 것.</li>
+  <li>fast-forword
+main branch에는 새로운 commit이 없고 dev branch(만든 branch)에만 새로운 commit이 있는 경우 dev branch를 main branch라고 선언하게 된다. 즉, 분기가 없어지고 main에서 새로운commit이 생성된 것과 같은 현상이 발생.</li>
+  <li>
+    <p>rebase &amp; merge
+rebase를 이용해서 신규 branch의 시작점을 main branch의 최근 commit으로 옮긴 다음 fast-forword merge 하는 방법.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>revbase &amp; merge 하는 이유
+	1. 3-way-merge 말고 강제로 fast-forword merge 하고 싶은 경우
+	2. commit 내역을 한 줄로 계속 이어서 남기고 싶은 경우
+
+사용 방법
+	1. 새로운 branch 이동
+	2. `git rebase main` 명령어 사용
+	3. main branch에서 fast-forword merge
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="코드-되돌리기"><span class="me-2">코드 되돌리기</span><a href="#코드-되돌리기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li>
+    <p>git restore [파일명]
+최근 commit된 상태로 현재 파일의 수정내역을 되돌린다.</p>
+  </li>
+  <li>
+    <p>git restore –source [commit아이디] [파일명] 입력한 파일이 특정 commit 아이디 시점으로 되돌아 간다.</p>
+  </li>
+  <li>
+    <p>git resotre –staged [파일명] 특정 파일을 staging 취소.</p>
+  </li>
+  <li>
+    <p>git revert [commit아이디]</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>kl2j32k c작업
+lkljlk4 b작업
+lk34j33 a작업
+
+</pre></td></tr></tbody></table></code></div>    </div>
+
+    <ol>
+      <li>예를 들어 위와 같은 commit 내역이 있는 경우 b작업 내역을 지우고 싶다면
+<code class="language-plaintext highlighter-rouge">git revert [commit아이디]</code> 명령어로 b작업 취소 -&gt; c작업에는 영향 없음.</li>
+      <li>그냥 최근 commit 내역을 삭제하고 싶다면 <code class="language-plaintext highlighter-rouge">git revert HEAD</code></li>
+    </ol>
+  </li>
+  <li>
+    <p>git reset –hard [commit아이디]</p>
+
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">git reset --hard [commit아이디]</code> 명령어는 협업시 사용하지 않는 것이 좋다.</li>
+      <li>다른 개발자의 작업까지 취소해버리는 위험한 명령어</li>
+      <li>그래서 짧은 commit내역으로 돌아가거나 혼자 작업할 경우 유용함</li>
+    </ol>
+  </li>
+  <li>
+    <p>git reset –soft [commit아이디]
+reset를 하긴하는데 hard 옵션과 같이 전부 삭제하는 것이 아닌 해당 commit이 staging 형태로 남아 있음</p>
+  </li>
+  <li>
+    <p>git reset –mixed [commit아이디]
+reset를 하는데 해당 commit 했던 내역이 staging 형태도 아닌 수정된 상태에서 남아 있음 -&gt; git add전 상태</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="원격저장소-관련"><span class="me-2">원격저장소 관련</span><a href="#원격저장소-관련" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li>원격저장소에서 repository 생성 후 로컬과 연결
+    <ol>
+      <li>원격저장소에서 새로운 repository 생성</li>
+      <li><code class="language-plaintext highlighter-rouge">git init</code> : 작업 폴더에 로컬 git repository 생성</li>
+      <li><code class="language-plaintext highlighter-rouge">git branch -M main</code> : main branch이름을 main으로 지정</li>
+      <li><code class="language-plaintext highlighter-rouge">git push -u [원격저장소주소] main</code> : 원격저장소에 push</li>
+      <li><code class="language-plaintext highlighter-rouge">git remote add origin [원격저장소주소]</code> : 원격저장소 주소를 매번 쓰기 귀찮으니 origin이라는 변수명에 담는 과정</li>
+      <li><code class="language-plaintext highlighter-rouge">.gitignore</code></li>
+      <li>원격저장소에 올리고 싶지 않은 파일을 <code class="language-plaintext highlighter-rouge">.gitignore</code>에 입력하면 원격 저장소에 안올라간다.</li>
+      <li>보통 <code class="language-plaintext highlighter-rouge">node_modules</code> 나 <code class="language-plaintext highlighter-rouge">.env</code> 파일은 올리지 않음</li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="git-branch-전략-2가지"><span class="me-2">git branch 전략 2가지</span><a href="#git-branch-전략-2가지" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li>
+    <p>git flow</p>
+
+    <ol>
+      <li>main : main branch</li>
+      <li>develop : main에서 merge를 바로 해버리면 위험하다고 판단하여 develop branch를 생성하여 확인 후 main에 merge</li>
+      <li>feature : develop branch에서 기능 단위로 개발할 경우 feature branch를 생성하여 기능 개발 후 develop branch로 merg</li>
+      <li>release : main branch에 merge하기 전 release branch에서 QA나 여러가지 테스트 진행</li>
+      <li>hotfix : 긴급하게 수정해야 되는 경우 hotfix branch를 생성하여 작업 후 merge</li>
+    </ol>
+  </li>
+  <li>
+    <p>Trunk-Based</p>
+    <ol>
+      <li>main branch에서 기능 개발 branch인 feature branch를 생성하거나 hotfix branch를 생성하여 완료되면 main branch에 바로 merge</li>
+      <li>이 전략은 테스트 자동화나 철저한 코드리뷰가 바탕이 되었을 경우 진행</li>
+      <li>아니면, 초반에는 git flow 전략으로 개발을 진행하다가 어느정도 안정화가 이루어 진 후trunk-based 전략으로 변경하는 것도 좋은 방법</li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="코드-임시-보관"><span class="me-2">코드 임시 보관</span><a href="#코드-임시-보관" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">git stash</code></p>
+
+    <ol>
+      <li>방금 작성한 코드가 임시 저장된다</li>
+      <li>staging 된 것이든 안 된 것이든 임시 저장됨</li>
+      <li><code class="language-plaintext highlighter-rouge">git stash save 'message'</code> 메시지와 같이 임시 저장</li>
+      <li>stash 목록이 많은 경우 찾기 좋음</li>
+    </ol>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">git stash list</code></p>
+
+    <ol>
+      <li>git stash한 리스트 목록 확인</li>
+    </ol>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">git stash pop</code></p>
+
+    <ol>
+      <li>최근 stash한 코드를 불러온다</li>
+      <li>당연히 겹치는 코드가 있다면 conflict가 발생</li>
+    </ol>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">git stash drop [삭제할 id]</code></p>
+    <ol>
+      <li>git stash 목록에서 원하는 목록 삭제</li>
+      <li>삭제할 id는 <code class="language-plaintext highlighter-rouge">git stash list</code> 하면 보이는 아이디(ex: 0,1,2 등등)</li>
+    </ol>
+  </li>
+</ol>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-  </ul>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/development/">Development</a>,
+          <a href="/categories/git/">Git</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/git/"
+            class="post-tag no-text-decoration"
+          >git</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          이 기사는 저작권자의 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         라이센스를 따릅니다.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">공유하기</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=[Git]%20Git%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC%20-%20Youn's%20Tech%20Blog&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fgit%25EB%25AA%2585%25EB%25A0%25B9%25EC%2596%25B4-%25EC%25A0%2595%25EB%25A6%25AC%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=[Git]%20Git%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC%20-%20Youn's%20Tech%20Blog&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fgit%25EB%25AA%2585%25EB%25A0%25B9%25EC%2596%25B4-%25EC%25A0%2595%25EB%25A6%25AC%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fgit%25EB%25AA%2585%25EB%25A0%25B9%25EC%2596%25B4-%25EC%25A0%2595%25EB%25A6%25AC%2F&text=[Git]%20Git%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A0%95%EB%A6%AC%20-%20Youn's%20Tech%20Blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="링크 복사하기"
+      data-title-succeed="링크가 복사되었습니다!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -577,7 +1018,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/test/">test</a>
+          <a href="/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/">[Git] Git 명령어 정리</a>
         </li>
       
         
@@ -757,7 +1198,7 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/test/">test</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
@@ -772,12 +1213,94 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">바로가기</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/customize-the-favicon/"
+      class="btn btn-outline-primary"
+      aria-label="이전 글"
+    >
+      <p>Customize the Favicon</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="다음 글">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -961,7 +1484,7 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/test/">test</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/git/">git</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
@@ -1030,6 +1553,13 @@
 
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1093,16 +1623,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.25.0/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
