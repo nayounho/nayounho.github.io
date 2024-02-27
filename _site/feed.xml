@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
   <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
-  <updated>2024-02-22T20:10:59+09:00</updated>
+  <updated>2024-02-27T14:31:13+09:00</updated>
   <author>
     <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,57 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[Flutter] MacOs, Flutter 개발 환경 세팅</title>
+    <link href="http://localhost:4000/posts/flutter-dev-setting/" rel="alternate" type="text/html" title="[Flutter] MacOs, Flutter 개발 환경 세팅" />
+    <published>2024-02-27T12:00:00+09:00</published>
+  
+    <updated>2024-02-27T12:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/flutter-dev-setting/</id>
+    <content src="http://localhost:4000/posts/flutter-dev-setting/" />
+    <author>
+      <name>nayounho</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+    <category term="Flutter" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      macOS, Flutter 개발 환경 세팅
+
+Flutter SDK 다운로드 및 압축 풀기
+
+
+  flutter 공홈 -&amp;gt; get started 버튼 -&amp;gt; macOS 선택 -&amp;gt; iOS 선택 -&amp;gt; 스크롤을 좀 내리다 보면 download and install 탭이 있는데 intel칩이면 intel prosessor를 클릭하여 다운받고(.zip 파일) m1이상이면 apple silicon을 클릭하여 받으면 된다
+  
+    다운된 파일을 압축해제 한 후 환경설정을 해줘야 한다
+
+    
+      터미널을 켜고
+      
+        echo &amp;amp;SHELL 명령어를 입력하여 내가 어떤 셸을 사용하는지 확인 -&amp;gt; /bin/bash 또는 /bin/zsh
+
+        
+  ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>

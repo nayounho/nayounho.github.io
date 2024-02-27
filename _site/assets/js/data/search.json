@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "[Flutter] MacOs, Flutter 개발 환경 세팅",
+    "url": "/posts/flutter-dev-setting/",
+    "categories": "Development, Flutter",
+    "tags": "flutter, macos, setting",
+    "date": "2024-02-27 12:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "macOS, Flutter 개발 환경 세팅Flutter SDK 다운로드 및 압축 풀기  flutter 공홈 -&gt; get started 버튼 -&gt; macOS 선택 -&gt; iOS 선택 -&gt; 스크롤을 좀 내리다 보면 download and install 탭이 있는데 intel칩이면 intel prosessor를 클릭하여 다운받고(.zip...",
+    "content": "macOS, Flutter 개발 환경 세팅Flutter SDK 다운로드 및 압축 풀기  flutter 공홈 -&gt; get started 버튼 -&gt; macOS 선택 -&gt; iOS 선택 -&gt; 스크롤을 좀 내리다 보면 download and install 탭이 있는데 intel칩이면 intel prosessor를 클릭하여 다운받고(.zip 파일) m1이상이면 apple silicon을 클릭하여 받으면 된다      다운된 파일을 압축해제 한 후 환경설정을 해줘야 한다          터미널을 켜고              echo &amp;SHELL 명령어를 입력하여 내가 어떤 셸을 사용하는지 확인 -&gt; /bin/bash 또는 /bin/zsh                  Bash                          vi ~/.bashrc                                            Z Shell                          vi ~/.zshrc                                          export PATH=\"$PATH:{압축을 푼 폴더 위치}/flutter/bin\" 입력      esc -&gt; : wq (저장 후 나옴)      source ~/zshrc 변경사항 적용 명령어 실행      Xcode 설치  Xcode는 애플에서 제공하는 iOS 개발 툴이며, flutter 앱을 iOS용으로 빌드하려면 Xcode가 필요      앱 스토어에 접속하여 Xcode를 설치      안드로이드 스튜디오 설치      안드로이드스튜디오 공홈 에서 IDE 설치    설치 진행 시 인텔칩과 애플 실리콘 중 선택  setting -&gt; Android SDK -&gt; SDK Tools 에서 Android SDK Command-line Tools(latest) 설치      setting -&gt; Plugins에서 flutter, dart 설치      flutter doctor 실행  터미널에 flutter doctor 명령어를 실행해보면 flutter 개발 환경에서 부족한 부분을 체크해준다  보통 여기까지 왔으면 2~3개 정도 x표시가 나타날 것이다  설치가 안 된 것은 flutter doctor가 설치 방법을 알려주니 따라서 설치하면 된다flutter 라이선스  안드로이드 스튜디오에서 라이선스 체크를 하였지만 터미널에서 한 번 더 해주어야 한다  flutter doctor --android-licenses 명령어 입력 후 동의 될 때까지 전부 Accept (y)Test  개발환경이 완료되면 test를 진행  먼저 터미널에 flutter create [프로젝트이름](예: flutter create testflutter)  vscode에서 해당 파일을 열면 flutter 프로젝트가 나타난다      lib -&gt; main.dart 를 켠다    사용할 디바이스 선택      하단의 디바이스 선택 버튼을 클릭하고 디바이스 선택        flutter run    성공!!"
+  },
+  
+  {
     "title": "[React-query] React-query 사용예제",
     "url": "/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/",
     "categories": "Development, Library",
