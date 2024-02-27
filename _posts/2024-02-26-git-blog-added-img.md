@@ -28,7 +28,7 @@ render_with_liquid: false
 ## 이미지 경로 확인
 
 - 기본 마크업
-  `[img name](.././assets/img/2024-02-01-test/a.png)`
+  `![img name](.././assets/img/2024-02-01-test/a.png)`
 
   - 기본 마크업으로 이미지를 삽입하는 경우 github에 올렸을 때 경로를 찾지 못하는 오류 발생
 
@@ -42,3 +42,8 @@ render_with_liquid: false
 
   3. 이미지 경로를 복사하여 사용하면 끝!! 간단하네
      ![img_path](https://github.com/nayounho/nayounho.github.io/assets/72903935/16ad3b86-5e43-402c-a37d-1d6862d67d8b)
+
+  4. 이미지 사이즈 설정
+
+  - 사이즈 설정은 뒷부분에 중괄호를 입력 후 안쪽에 `width`와 `height` 설정
+    - `![img name](이미지 경로){: width='50%', height='50%'}`
