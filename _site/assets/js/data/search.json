@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "[Github 블로그] Github 블로그 Page에 이미지 삽입",
+    "url": "/posts/git-blog-added-img/",
+    "categories": "Development, blog",
+    "tags": "github, blog, image",
+    "date": "2024-02-27 17:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Github 블로그 Page에 이미지 삽입이미지 준비  사용할 이미지를 자신의 github blog 프로젝트의 폴더 중 assets 폴더 안으로 이동한다      나같은 경우 post파일 이름과 같은 이름으로 폴더를 만들어 관리 중    assets  L img\t L 2024-02-01-test\t\t\t L a.png\t\t\t L b.png\t L 2024-0...",
+    "content": "Github 블로그 Page에 이미지 삽입이미지 준비  사용할 이미지를 자신의 github blog 프로젝트의 폴더 중 assets 폴더 안으로 이동한다      나같은 경우 post파일 이름과 같은 이름으로 폴더를 만들어 관리 중    assets  L img\t L 2024-02-01-test\t\t\t L a.png\t\t\t L b.png\t L 2024-02-03-test2\t\t\t L c.png\t\t\t L d.png      이미지 경로 확인      기본 마크업[img name](.././assets/img/2024-02-01-test/a.png)          기본 마크업으로 이미지를 삽입하는 경우 github에 올렸을 때 경로를 찾지 못하는 오류 발생            github에서 경로 확인 후 삽입                  깃헙 공홈에 접속 후 Issues탭으로 이동 후 New issue를 클릭                    이미지 경로 확인을 위하여 해당 이미지를 업로드                    이미지 경로를 복사하여 사용하면 끝!! 간단하네            "
+  },
+  
+  {
     "title": "[Flutter] MacOs, Flutter 개발 환경 세팅",
     "url": "/posts/flutter-dev-setting/",
     "categories": "Development, Flutter",
