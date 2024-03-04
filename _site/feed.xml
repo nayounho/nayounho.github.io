@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
   <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
-  <updated>2024-02-27T17:47:36+09:00</updated>
+  <updated>2024-03-04T18:27:55+09:00</updated>
   <author>
     <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,72 @@
 
   
   <entry>
+    <title>[Flutter] iOS, Code Factory Ch11 동영상플레이어</title>
+    <link href="http://localhost:4000/posts/code-factory-ch11/" rel="alternate" type="text/html" title="[Flutter] iOS, Code Factory Ch11 동영상플레이어" />
+    <published>2024-03-04T12:00:00+09:00</published>
+  
+    <updated>2024-03-04T12:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/code-factory-ch11/</id>
+    <content src="http://localhost:4000/posts/code-factory-ch11/" />
+    <author>
+      <name>nayounho</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+    <category term="Flutter" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      코드팩도리 CH11 동영상플레이어
+
+프로젝트 목적
+
+
+  동영상 플레이어 앱 구현
+  핸드폰에 저장해둔 동영상을 선택, 실행, 컨트롤하는 기능 구현
+
+
+사전 준비
+
+
+  
+    pubspec.yaml 파일에 라이브러리 추가
+
+    // pubspec.yaml
+dependencies:
+	flutter:
+	sdk: flutter
+	image_picker: ^1.0.7
+	video_player: ^2.8.2
+    
+
+    
+      첫 번째 방법으로 pubspec.yaml 파일의 dependencies에 사용할 라이브러리를 위와 같이 추가하고 상단 우측에 Get Packages아이콘을 누르게 되면 해당 라이브러리가 받아진다.
+      두 번째 방법은 터미널을 켜고 flutter pub add [라...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>[Github 블로그] Github 블로그 Page에 이미지 삽입</title>
     <link href="http://localhost:4000/posts/git-blog-added-img/" rel="alternate" type="text/html" title="[Github 블로그] Github 블로그 Page에 이미지 삽입" />
     <published>2024-02-27T17:00:00+09:00</published>
   
-    <updated>2024-02-27T17:00:00+09:00</updated>
+    <updated>2024-02-27T17:48:22+09:00</updated>
   
     <id>http://localhost:4000/posts/git-blog-added-img/</id>
     <content src="http://localhost:4000/posts/git-blog-added-img/" />
