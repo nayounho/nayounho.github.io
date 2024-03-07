@@ -1,6 +1,6 @@
 ---
 title: "[Flutter] iOS, Code Factory Ch11 동영상플레이어"
-date: 2024-03-04 12:00:00 +09:00
+date: 2024-03-04 18:00:00 +09:00
 categories: [Development, Flutter]
 tags: [flutter, iOS, code_factory, video_player, image_picker]
 render_with_liquid: false

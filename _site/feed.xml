@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
   <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
-  <updated>2024-03-04T18:27:55+09:00</updated>
+  <updated>2024-03-07T12:23:52+09:00</updated>
   <author>
     <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>[Flutter] iOS, Code Factory Ch11 동영상플레이어</title>
     <link href="http://localhost:4000/posts/code-factory-ch11/" rel="alternate" type="text/html" title="[Flutter] iOS, Code Factory Ch11 동영상플레이어" />
-    <published>2024-03-04T12:00:00+09:00</published>
+    <published>2024-03-04T18:00:00+09:00</published>
   
-    <updated>2024-03-04T12:00:00+09:00</updated>
+    <updated>2024-03-04T18:00:00+09:00</updated>
   
     <id>http://localhost:4000/posts/code-factory-ch11/</id>
     <content src="http://localhost:4000/posts/code-factory-ch11/" />
@@ -74,6 +74,75 @@ dependencies:
     
       첫 번째 방법으로 pubspec.yaml 파일의 dependencies에 사용할 라이브러리를 위와 같이 추가하고 상단 우측에 Get Packages아이콘을 누르게 되면 해당 라이브러리가 받아진다.
       두 번째 방법은 터미널을 켜고 flutter pub add [라...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Flutter] vsCode, Flutter 기본 세팅</title>
+    <link href="http://localhost:4000/posts/flutter-default-setting/" rel="alternate" type="text/html" title="[Flutter] vsCode, Flutter 기본 세팅" />
+    <published>2024-02-29T20:00:00+09:00</published>
+  
+    <updated>2024-02-29T20:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/flutter-default-setting/</id>
+    <content src="http://localhost:4000/posts/flutter-default-setting/" />
+    <author>
+      <name>nayounho</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+    <category term="Flutter" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      [vscode]Flutter 프로젝트 세팅
+
+flutter create [프로젝트명]
+
+
+  터미널에서 flutter create [프로젝트명]명령어로 프로젝트 만들기
+
+
+Extension 설치
+
+
+  Dart extension
+  Flutter extension
+
+
+dart devtool, 시뮬레이터 실행
+
+
+
+
+  이미지 하단의 빨간 박스의 Dart devtool과 디바이스 선택 버튼이 있는지 확인
+
+
+
+
+
+  디바이스 선택 버튼 클릭 시 상단의 빨간 박스가 나타나고 개발을 진행 할 디바이스 선택
+  Dart devtool이 안보인다면 {} Dart 버튼을 호버하면 표시줄에 추가 할 항목이 나타나고 우측 pin 모양을 눌러 선택해주면 된다.
+
+
+source.fixAll 활성화
+
+
+  vscode에서...
     </summary>
   
 
@@ -250,51 +319,6 @@ const data = await res.json();
 
 
 setCoins(data.slice(0, 100...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>[Git] Git 명령어 정리</title>
-    <link href="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="[Git] Git 명령어 정리" />
-    <published>2024-02-22T17:30:00+09:00</published>
-  
-    <updated>2024-02-22T19:52:12+09:00</updated>
-  
-    <id>http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</id>
-    <content src="http://localhost:4000/posts/git%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/" />
-    <author>
-      <name>nayounho</name>
-    </author>
-
-  
-    
-    <category term="Development" />
-    
-    <category term="Git" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      git merge 3가지 방법
-
-
-  3-way merge
-브랜치 각각(ex: main branch와 dev branch)에 신규 commit이 1회 이상 있는 경우 merge를 하게 되면 두 branch 코드가 합쳐져서 main branch에 새로운 commit이 생성되는 것.
-  fast-forword
-main branch에는 새로운 commit이 없고 dev branch(만든 branch)에만 새로운 commit이 있는 경우 dev branch를 main branch라고 선언하게 된다. 즉, 분기가 없어지고 main에서 새로운commit이 생성된 것과 같은 현상이 발생.
-  
-    rebase &amp;amp; merge
-rebase를 이용해서 신규 branch의 시작점을 main branch의 최근 ...
     </summary>
   
 
