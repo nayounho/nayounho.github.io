@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Youn's Tech Blog</title>
   <subtitle>Frontend developer, JavaScript, TypeScropt, Flutter</subtitle>
-  <updated>2024-03-07T12:23:52+09:00</updated>
+  <updated>2024-03-12T19:09:51+09:00</updated>
   <author>
     <name>nayounho</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,85 @@
 
   
   <entry>
+    <title>[Flutter] MacOS, video_player 패키지로 동영상 재생하기</title>
+    <link href="http://localhost:4000/posts/vidoe-player/" rel="alternate" type="text/html" title="[Flutter] MacOS, video_player 패키지로 동영상 재생하기" />
+    <published>2024-03-12T16:00:00+09:00</published>
+  
+    <updated>2024-03-12T16:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/vidoe-player/</id>
+    <content src="http://localhost:4000/posts/vidoe-player/" />
+    <author>
+      <name>nayounho</name>
+    </author>
+
+  
+    
+    <category term="Development" />
+    
+    <category term="Flutter" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      video_player 패키지를 사용하여 동영상 재생하기
+
+video_player 패키지 설치
+
+
+  
+    flutter pub add video_player 명령어를 사용화여 video_player 패키지 설치
+
+    // pubspec.yaml
+dependencies:
+flutter:
+  sdk: flutter
+
+cupertino_icons: ^1.0.6
+video_player: ^2.8.3
+    
+  
+
+
+테스트할 동영상을 시뮬레이터 이미지에 저장하기
+
+
+  MacOS는 동영상 저장 방법이 간단하다
+  사용할 동영상을 시뮬레이터 사진앱에 들어가서 드래그로 옮겨주면 끝
+
+
+
+
+
+  동영상 3개를 추가하였다.
+
+
+접근 권한 설정
+
+
+  MacOS의 사진앱 접근 권한 설정
+
+
+//ios/runn...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>[Flutter] iOS, Code Factory Ch11 동영상플레이어</title>
     <link href="http://localhost:4000/posts/code-factory-ch11/" rel="alternate" type="text/html" title="[Flutter] iOS, Code Factory Ch11 동영상플레이어" />
     <published>2024-03-04T18:00:00+09:00</published>
   
-    <updated>2024-03-04T18:00:00+09:00</updated>
+    <updated>2024-03-07T12:25:18+09:00</updated>
   
     <id>http://localhost:4000/posts/code-factory-ch11/</id>
     <content src="http://localhost:4000/posts/code-factory-ch11/" />
@@ -260,65 +334,6 @@ Flutter SDK 다운로드 및 압축 풀기
 
         
   ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>[React-query] React-query 사용예제</title>
-    <link href="http://localhost:4000/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/" rel="alternate" type="text/html" title="[React-query] React-query 사용예제" />
-    <published>2024-02-22T20:00:00+09:00</published>
-  
-    <updated>2024-02-22T20:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/</id>
-    <content src="http://localhost:4000/posts/React-Query-%EC%82%AC%EC%9A%A9-%EC%98%88%EC%A0%9C/" />
-    <author>
-      <name>nayounho</name>
-    </author>
-
-  
-    
-    <category term="Development" />
-    
-    <category term="Library" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      React-query 사용 예제
-
-기존 코드
-
-
-const Coins = () =&amp;gt; {
-
-const [coins, setCoins] = useState&amp;lt;ICoin[]&amp;gt;([]); // 통신으로 받아온 coins data 상태관리
-
-const [loading, setLoading] = useState(true); // 통신 과정 상태관리
-
-
-
-useEffect(() =&amp;gt; { // 화면 mount 시 해당 함수 실행
-
-(async () =&amp;gt; {
-
-const res = await fetch("httpspi.coinpaprika.com/v1/coins"); // data 요청
-
-const data = await res.json();
-
-
-
-setCoins(data.slice(0, 100...
     </summary>
   
 
